@@ -12,6 +12,10 @@ from pathlib import Path
 import plotly.graph_objects as go
 import plotly.express as px
 
+# Create our DASH app object!
+app = dash.Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+
+
 # Where is our database, wherever we're running this?
 # and let's abstract with SQLAlchemy
 ScriptPath = Path.cwd()
@@ -30,8 +34,6 @@ df= pd.read_sql('Select [Symbol],[Full Name] as [Name], [Category], [Expense Rat
 # From that, create unique Managers for Drop Down
 mgrs = sorted(df['Manager'].unique())
 
-# Create our DASH app object!
-app = dash.Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
 
 #
 # Part 1: DATA FUNCTIONS

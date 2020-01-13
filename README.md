@@ -1,5 +1,7 @@
 # pythonanywhere
 Demo Pythonanywhere app
 
-Use Pip3 on PythonAnywhere shell
+Use Pip3 on PythonAnywhere shell make sure in website directory
+pip3.8 install --user dash
+etc...
 
