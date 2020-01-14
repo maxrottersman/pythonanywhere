@@ -14,6 +14,7 @@ import plotly.express as px
 
 # Create our DASH app object!
 app = dash.Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+server = app.server
 
 
 # Where is our database, wherever we're running this?
