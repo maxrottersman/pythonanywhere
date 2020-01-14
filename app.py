@@ -23,7 +23,7 @@ dbPath = ScriptPath / 'data'
 dbPathandFileStr = str(dbPath / 'ETFdata.sqlite')
 dbPathandFile = dbPath / 'ETFdata.sqlite'
 db_uri = r'sqlite:///' + str(dbPathandFile)
-
+p
 # Connect to our db from SQLAlchemy
 # playing safe, making these global
 global db, df, mgrs 
